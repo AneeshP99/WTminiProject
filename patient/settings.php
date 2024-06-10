@@ -277,7 +277,7 @@
             
            
             $dob=$row["pdob"];
-            $nic=$row['pnic'];
+           // $nic=$row['pnic'];
             $tele=$row['ptel'];
             echo '
             <div id="popup1" class="overlay">

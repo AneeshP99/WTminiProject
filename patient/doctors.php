@@ -316,7 +316,7 @@
             $spcil_res = $stmt->get_result();
             $spcil_array= $spcil_res->fetch_assoc();
             $spcil_name=$spcil_array["sname"];
-            $nic=$row['docnic'];
+           // $nic=$row['docnic'];
             $tele=$row['doctel'];
             echo '
             <div id="popup1" class="overlay">
@@ -359,16 +359,7 @@
                                 '.$email.'<br><br>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                    <label for="nic" class="form-label">NIC: </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-td" colspan="2">
-                                '.$nic.'<br><br>
-                                </td>
-                            </tr>
+                            
                             <tr>
                                 <td class="label-td" colspan="2">
                                     <label for="Tele" class="form-label">Telephone: </label>
@@ -455,7 +446,7 @@
 
             $spcil_array= $spcil_res->fetch_assoc();
             $spcil_name=$spcil_array["sname"];
-            $nic=$row['docnic'];
+           // $nic=$row['docnic'];
             $tele=$row['doctel'];
 
             $error_1=$_GET["error"];
@@ -514,16 +505,7 @@
                                         
                                     </tr>
                                     
-                                    <tr>
-                                        <td class="label-td" colspan="2">
-                                            <label for="nic" class="form-label">NIC: </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="label-td" colspan="2">
-                                            <input type="text" name="nic" class="input-text" placeholder="NIC Number" value="'.$nic.'" required><br>
-                                        </td>
-                                    </tr>
+
                                     <tr>
                                         <td class="label-td" colspan="2">
                                             <label for="Tele" class="form-label">Telephone: </label>
